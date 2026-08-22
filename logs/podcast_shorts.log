@@ -1,0 +1,2168 @@
+[2026-08-21 15:43:29] INFO     src.downloader — [VideoSailor] Initiating download request for: https://www.youtube.com/watch?v=jNQXAC9IVRw
+[2026-08-21 15:43:33] INFO     src.downloader — [VideoSailor] Received tunnel URL. Streaming video to jNQXAC9IVRw.mp4...
+[2026-08-21 15:44:02] INFO     src.downloader — [VideoSailor] Download finished → jNQXAC9IVRw.mp4 (0.60 MB)
+[2026-08-21 15:44:02] INFO     src.inspector — Inspecting: jNQXAC9IVRw.mp4
+[2026-08-21 15:44:51] INFO     src.inspector — Inspecting: jNQXAC9IVRw.mp4
+[2026-08-21 15:44:51] INFO     app.transcriber — 🚀 Starting AssemblyAI Cloud transcription for 'jNQXAC9IVRw.mp4'...
+[2026-08-21 15:44:53] INFO     app.transcriber — Transcribing audio via AssemblyAI Cloud API (extracted_audio.mp3)...
+[2026-08-21 15:45:00] INFO     app.transcriber — Re-chunked monolithic segment into 3 sentence segments
+[2026-08-21 15:45:00] INFO     src.inspector — Inspecting: jNQXAC9IVRw.mp4
+[2026-08-21 15:45:00] INFO     app.transcriber — ✓ Transcription complete: 3 segments, 0.3 min speech (media duration 0.3 min).
+[2026-08-21 15:45:00] INFO     app.transcriber — Saved transcript JSON -> transcript.json
+[2026-08-21 15:45:00] INFO     app.transcriber — Saved transcript TXT -> transcript.txt
+[2026-08-21 15:45:00] INFO     app.clip_selector — Processing transcript with 3 segments (total duration 18.4s)
+[2026-08-21 15:45:00] INFO     app.clip_selector — Short avg segment duration (6.1s) detected — using relaxed word-count validation (min_words=8)
+[2026-08-21 15:45:00] INFO     app.clip_selector — Identified 1 clean sentence start anchors out of 3 segments
+[2026-08-21 15:45:00] INFO     app.clip_selector — Generated 2 raw candidate windows
+[2026-08-21 15:45:00] INFO     app.clip_selector — Validation: 2 valid, 0 rejected
+[2026-08-21 15:45:00] INFO     app.clip_selector — Deduplication: reduced to 1 candidates in full candidate pool
+[2026-08-21 15:45:00] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (1 clips)
+[2026-08-21 15:45:00] INFO     app.clip_selector — Saved complete candidate pool -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (1 clips)
+[2026-08-21 15:45:00] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.json (1 clips)
+[2026-08-21 15:45:00] INFO     app.clip_selector — Candidates TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.txt
+[2026-08-21 15:45:00] INFO     app.semantic_ranker — Loaded candidate pool of 1 candidates from candidate_pool.json
+[2026-08-21 15:45:01] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 404: {
+  "error": {
+    "code": 404,
+    "message": "models/qwen2.5:3b is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-08-21 15:45:02] INFO     app.semantic_ranker — Evaluated 1 candidates in 1.5s (1.54s/clip)
+[2026-08-21 15:45:02] WARNING  app.semantic_ranker — No candidates met min_score=10.0; falling back to top candidates
+[2026-08-21 15:45:02] INFO     app.semantic_ranker — Saved semantic JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.json (1 clips)
+[2026-08-21 15:45:02] INFO     app.semantic_ranker — Saved semantic TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.txt
+[2026-08-21 15:46:34] INFO     app.transcriber — 🚀 Starting AssemblyAI Cloud transcription for 'jNQXAC9IVRw.mp4'...
+[2026-08-21 15:46:34] INFO     app.transcriber — Transcribing audio via AssemblyAI Cloud API (extracted_audio.mp3)...
+[2026-08-21 15:46:41] INFO     app.transcriber — Re-chunked monolithic segment into 3 sentence segments
+[2026-08-21 15:46:41] INFO     src.inspector — Inspecting: jNQXAC9IVRw.mp4
+[2026-08-21 15:46:41] INFO     app.transcriber — ✓ Transcription complete: 3 segments, 0.3 min speech (media duration 0.3 min).
+[2026-08-21 15:46:41] INFO     app.transcriber — Saved transcript JSON -> transcript.json
+[2026-08-21 15:46:41] INFO     app.transcriber — Saved transcript TXT -> transcript.txt
+[2026-08-21 15:46:41] INFO     app.clip_selector — Processing transcript with 3 segments (total duration 18.4s)
+[2026-08-21 15:46:41] INFO     app.clip_selector — Short avg segment duration (6.1s) detected — using relaxed word-count validation (min_words=8)
+[2026-08-21 15:46:41] INFO     app.clip_selector — Identified 1 clean sentence start anchors out of 3 segments
+[2026-08-21 15:46:41] INFO     app.clip_selector — Generated 2 raw candidate windows
+[2026-08-21 15:46:41] INFO     app.clip_selector — Validation: 2 valid, 0 rejected
+[2026-08-21 15:46:41] INFO     app.clip_selector — Deduplication: reduced to 1 candidates in full candidate pool
+[2026-08-21 15:46:41] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (1 clips)
+[2026-08-21 15:46:41] INFO     app.clip_selector — Saved complete candidate pool -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (1 clips)
+[2026-08-21 15:46:41] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.json (1 clips)
+[2026-08-21 15:46:41] INFO     app.clip_selector — Candidates TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.txt
+[2026-08-21 15:46:41] INFO     app.semantic_ranker — Loaded candidate pool of 1 candidates from candidate_pool.json
+[2026-08-21 15:46:42] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 404: {
+  "error": {
+    "code": 404,
+    "message": "This model models/gemini-2.0-flash is no longer available. Please update your code to use models/gemini-3.6-flash for the latest features and improvements.",
+    "status": "NOT_FOUND"
+  }
+}
+
+[2026-08-21 15:46:42] INFO     app.semantic_ranker — Evaluated 1 candidates in 1.4s (1.40s/clip)
+[2026-08-21 15:46:42] WARNING  app.semantic_ranker — No candidates met min_score=10.0; falling back to top candidates
+[2026-08-21 15:46:42] INFO     app.semantic_ranker — Saved semantic JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.json (1 clips)
+[2026-08-21 15:46:42] INFO     app.semantic_ranker — Saved semantic TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.txt
+[2026-08-21 15:46:44] INFO     src.video_extractor — Source video: jNQXAC9IVRw.mp4
+[2026-08-21 15:46:44] INFO     src.video_extractor — Extracting clip: 00:00:00.983 -> 00:00:16.873 (15.89s)
+[2026-08-21 15:46:44] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 0.000 -i input\jNQXAC9IVRw.mp4 -ss 0.983 -t 15.890 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-21 15:46:44] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-21 15:46:45] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 320x240 @ 15.00fps | 239 frames
+[2026-08-21 15:46:45] INFO     src.face_tracker — Face tracking complete: 239/239 frames with primary face (100.0%)
+[2026-08-21 15:46:45] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (239 frames)
+[2026-08-21 15:46:45] INFO     src.reframer — Crop plan ready: 239 frames, crop=135x240 -> output 1080x1920
+[2026-08-21 15:46:45] INFO     src.reframer — Reframing 320x240 -> 1080x1920 @ 15.00fps (239 frames)…
+[2026-08-21 15:46:55] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-21 15:46:55] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-21 15:46:57] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-21 15:46:57] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 15.00fps (238 frames, 10 chunks)
+[2026-08-21 15:47:25] INFO     src.caption_renderer — Captioned 179/238 frames with animated word highlighting
+[2026-08-21 15:47:25] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-21 15:47:29] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_1.mp4
+[2026-08-22 09:29:10] INFO     server — [Pipeline] 🎬 [1/5] Downloading fresh video from: https://youtu.be/0e3GPea1Tyg
+[2026-08-22 09:29:11] INFO     src.downloader — [VideoSailor] Initiating download request for: https://youtu.be/0e3GPea1Tyg
+[2026-08-22 09:29:15] INFO     server — [Pipeline] ❌ Pipeline Error: VideoSailor API request failed (HTTP 402): {"error":"Insufficient credits"}
+[2026-08-22 09:31:21] INFO     server — [Pipeline] 🎬 [1/5] Downloading fresh video from: https://youtu.be/0e3GPea1Tyg
+[2026-08-22 09:31:21] INFO     src.downloader — [VideoSailor] Initiating download request for: https://youtu.be/0e3GPea1Tyg
+[2026-08-22 09:31:22] INFO     server — [Pipeline] ❌ Pipeline Error: VideoSailor API request failed (HTTP 402): {"error":"Insufficient credits"}
+[2026-08-22 09:32:56] INFO     server — [Pipeline] 🎬 [1/5] Downloading fresh video from: https://youtu.be/0e3GPea1Tyg
+[2026-08-22 09:32:56] INFO     src.downloader — [VideoSailor] Initiating download request for: https://youtu.be/0e3GPea1Tyg
+[2026-08-22 09:32:57] INFO     src.downloader — [VideoSailor] Received tunnel URL. Streaming video to 0e3GPea1Tyg.mp4...
+[2026-08-22 09:35:10] INFO     src.downloader — [VideoSailor] Download finished → 0e3GPea1Tyg.mp4 (216.54 MB)
+[2026-08-22 09:35:10] INFO     server — [Pipeline] ✓ Video downloaded: 0e3GPea1Tyg.mp4
+[2026-08-22 09:35:10] INFO     server — [Pipeline] 🎙️ [2/5] Transcribing audio with AssemblyAI Cloud API...
+[2026-08-22 09:35:29] INFO     app.transcriber — 🚀 Starting AssemblyAI Cloud transcription for '0e3GPea1Tyg.mp4'...
+[2026-08-22 09:35:32] INFO     app.transcriber — Transcribing audio via AssemblyAI Cloud API (extracted_audio.mp3)...
+[2026-08-22 09:36:38] INFO     app.transcriber — Re-chunked monolithic segment into 262 sentence segments
+[2026-08-22 09:36:38] INFO     src.inspector — Inspecting: 0e3GPea1Tyg.mp4
+[2026-08-22 09:36:39] INFO     app.transcriber — ✓ Transcription complete: 262 segments, 25.7 min speech (media duration 25.7 min).
+[2026-08-22 09:36:39] INFO     app.transcriber — Saved transcript JSON -> transcript.json
+[2026-08-22 09:36:39] INFO     app.transcriber — Saved transcript TXT -> transcript.txt
+[2026-08-22 09:36:39] INFO     server — [Pipeline] ✓ Transcription complete: 262 segments (en)
+[2026-08-22 09:36:39] INFO     server — [Pipeline] ⚡ [3/5] Extracting all key viral highlight moments across full video...
+[2026-08-22 09:36:39] INFO     app.clip_selector — Processing transcript with 262 segments (total duration 1539.9s)
+[2026-08-22 09:36:39] INFO     app.clip_selector — Short avg segment duration (5.9s) detected — using relaxed word-count validation (min_words=8)
+[2026-08-22 09:36:39] INFO     app.clip_selector — Identified 118 clean sentence start anchors out of 262 segments
+[2026-08-22 09:36:39] INFO     app.clip_selector — Generated 204 raw candidate windows
+[2026-08-22 09:36:39] INFO     app.clip_selector — Validation: 204 valid, 0 rejected
+[2026-08-22 09:36:39] INFO     app.clip_selector — Deduplication: reduced to 61 candidates in full candidate pool
+[2026-08-22 09:36:39] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (61 clips)
+[2026-08-22 09:36:39] INFO     app.clip_selector — Saved complete candidate pool -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (61 clips)
+[2026-08-22 09:36:39] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.json (61 clips)
+[2026-08-22 09:36:39] INFO     app.clip_selector — Candidates TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.txt
+[2026-08-22 09:36:39] INFO     server — [Pipeline] ✓ Selected 61 highlight clips from entire video
+[2026-08-22 09:36:39] INFO     server — [Pipeline] 🧠 [4/5] Evaluating candidates with semantic AI ranking...
+[2026-08-22 09:36:39] INFO     app.semantic_ranker — Loaded candidate pool of 61 candidates from candidate_pool.json
+[2026-08-22 09:36:40] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 09:36:42] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 09:36:43] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 09:36:45] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 09:36:46] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 13.320480894s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "13s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:48] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 11.976673459s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "11s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:50] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 10.061199947s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "10s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:51] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 8.722573651s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "8s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:53] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 6.828902976s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "6s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:54] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 5.483986423s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "5s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:56] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 3.634750466s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "3s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:57] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 2.34727241s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "2s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:58] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 1.630156588s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "1s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:36:59] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 335.426476ms.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "0s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 15 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 16 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 17 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 18 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 19 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 20 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 21 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 22 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 23 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 24 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 25 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 26 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 27 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 28 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 29 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 30 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 31 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 32 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 33 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 34 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 35 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 36 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 37 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 38 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 39 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 40 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 41 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 42 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 43 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 44 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 45 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 46 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 47 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 48 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 49 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 50 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 51 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 52 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 53 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 54 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 55 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 56 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 57 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 58 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 59 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 60 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 61 via fast heuristic ranking
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — Evaluated 61 candidates in 20.4s (0.33s/clip)
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — Saved semantic JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.json (47 clips)
+[2026-08-22 09:37:00] INFO     app.semantic_ranker — Saved semantic TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.txt
+[2026-08-22 09:37:00] INFO     server — [Pipeline] ✓ AI Semantic ranking complete: 47 top shorts ranked
+[2026-08-22 09:37:00] INFO     server — [Pipeline] 🎥 [5/5] Reframing 9:16 AI Face Tracking & burning captions for all 47 shorts across full video...
+[2026-08-22 09:37:00] INFO     server — [Pipeline]   Rendering Short #1/47: Just like the middle. Basically, you don't th...
+[2026-08-22 09:37:00] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:37:00] INFO     src.video_extractor — Extracting clip: 00:04:17.348 -> 00:04:37.819 (20.47s)
+[2026-08-22 09:37:00] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 247.349 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 20.471 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:37:03] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:37:03] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 490 frames
+[2026-08-22 09:37:21] INFO     src.face_tracker — Face tracking complete: 490/490 frames with primary face (100.0%)
+[2026-08-22 09:37:21] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (490 frames)
+[2026-08-22 09:37:21] INFO     src.reframer — Crop plan ready: 490 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:37:22] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (490 frames)…
+[2026-08-22 09:37:54] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:37:54] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:37:59] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:37:59] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (490 frames, 12 chunks)
+[2026-08-22 09:39:26] INFO     src.caption_renderer — Captioned 333/490 frames with animated word highlighting
+[2026-08-22 09:39:26] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:39:35] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_001.mp4
+[2026-08-22 09:39:35] INFO     server — [Pipeline]   ✓ Short #1 rendered → short_001.mp4
+[2026-08-22 09:39:35] INFO     server — [Pipeline]   Rendering Short #2/47: Let's move on to the next game. And now let's...
+[2026-08-22 09:39:35] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:39:35] INFO     src.video_extractor — Extracting clip: 00:07:38.759 -> 00:07:54.899 (16.14s)
+[2026-08-22 09:39:35] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 448.760 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.140 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:39:37] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:39:37] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 386 frames
+[2026-08-22 09:39:50] INFO     src.face_tracker — Face tracking complete: 341/386 frames with primary face (88.3%)
+[2026-08-22 09:39:51] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (386 frames)
+[2026-08-22 09:39:51] INFO     src.reframer — Crop plan ready: 386 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:39:51] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (386 frames)…
+[2026-08-22 09:40:13] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:40:13] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:40:15] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:40:15] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (386 frames, 14 chunks)
+[2026-08-22 09:41:35] INFO     src.caption_renderer — Captioned 372/386 frames with animated word highlighting
+[2026-08-22 09:41:35] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:41:43] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_002.mp4
+[2026-08-22 09:41:43] INFO     server — [Pipeline]   ✓ Short #2 rendered → short_002.mp4
+[2026-08-22 09:41:43] INFO     server — [Pipeline]   Rendering Short #3/47: Hey, let's check in on 067. In the show, you ...
+[2026-08-22 09:41:43] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:41:43] INFO     src.video_extractor — Extracting clip: 00:08:56.639 -> 00:09:14.200 (17.56s)
+[2026-08-22 09:41:43] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 526.640 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.560 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:41:45] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:41:45] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 421 frames
+[2026-08-22 09:41:58] INFO     src.face_tracker — Face tracking complete: 421/421 frames with primary face (100.0%)
+[2026-08-22 09:41:58] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (421 frames)
+[2026-08-22 09:41:58] INFO     src.reframer — Crop plan ready: 421 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:41:58] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (421 frames)…
+[2026-08-22 09:42:21] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:42:21] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:42:23] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:42:24] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (421 frames, 13 chunks)
+[2026-08-22 09:43:34] INFO     src.caption_renderer — Captioned 342/421 frames with animated word highlighting
+[2026-08-22 09:43:34] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:43:42] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_003.mp4
+[2026-08-22 09:43:42] INFO     server — [Pipeline]   ✓ Short #3 rendered → short_003.mp4
+[2026-08-22 09:43:42] INFO     server — [Pipeline]   Rendering Short #4/47: You guys can move on. Go ahead and head on no...
+[2026-08-22 09:43:42] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:43:42] INFO     src.video_extractor — Extracting clip: 00:10:21.773 -> 00:10:39.922 (18.15s)
+[2026-08-22 09:43:42] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 611.773 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 18.149 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:43:44] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:43:44] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 436 frames
+[2026-08-22 09:43:58] INFO     src.face_tracker — Face tracking complete: 436/436 frames with primary face (100.0%)
+[2026-08-22 09:43:59] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (436 frames)
+[2026-08-22 09:43:59] INFO     src.reframer — Crop plan ready: 436 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:43:59] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (436 frames)…
+[2026-08-22 09:44:24] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:44:24] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:44:28] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:44:28] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (435 frames, 14 chunks)
+[2026-08-22 09:45:53] INFO     src.caption_renderer — Captioned 357/435 frames with animated word highlighting
+[2026-08-22 09:45:53] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:46:02] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_004.mp4
+[2026-08-22 09:46:02] INFO     server — [Pipeline]   ✓ Short #4 rendered → short_004.mp4
+[2026-08-22 09:46:02] INFO     server — [Pipeline]   Rendering Short #5/47: Congratulations! It's 3 minutes of adrenaline...
+[2026-08-22 09:46:02] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:46:02] INFO     src.video_extractor — Extracting clip: 00:14:44.850 -> 00:15:04.710 (19.86s)
+[2026-08-22 09:46:02] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 874.850 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.860 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:46:04] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:46:04] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 476 frames
+[2026-08-22 09:46:19] INFO     src.face_tracker — Face tracking complete: 476/476 frames with primary face (100.0%)
+[2026-08-22 09:46:19] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (476 frames)
+[2026-08-22 09:46:19] INFO     src.reframer — Crop plan ready: 476 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:46:19] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (476 frames)…
+[2026-08-22 09:46:48] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:46:48] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:46:52] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:46:52] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (476 frames, 16 chunks)
+[2026-08-22 09:48:40] INFO     src.caption_renderer — Captioned 448/476 frames with animated word highlighting
+[2026-08-22 09:48:40] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:48:49] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_005.mp4
+[2026-08-22 09:48:49] INFO     server — [Pipeline]   ✓ Short #5 rendered → short_005.mp4
+[2026-08-22 09:48:49] INFO     server — [Pipeline]   Rendering Short #6/47: Hey, 3 minutes has gone by. Is anybody willin...
+[2026-08-22 09:48:49] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:48:49] INFO     src.video_extractor — Extracting clip: 00:17:32.150 -> 00:17:49.109 (16.96s)
+[2026-08-22 09:48:49] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1042.150 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.960 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:48:52] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:48:52] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 406 frames
+[2026-08-22 09:49:04] INFO     src.face_tracker — Face tracking complete: 406/406 frames with primary face (100.0%)
+[2026-08-22 09:49:04] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (406 frames)
+[2026-08-22 09:49:04] INFO     src.reframer — Crop plan ready: 406 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:49:04] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (406 frames)…
+[2026-08-22 09:49:25] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:49:25] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:49:28] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:49:28] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (406 frames, 13 chunks)
+[2026-08-22 09:50:34] INFO     src.caption_renderer — Captioned 352/406 frames with animated word highlighting
+[2026-08-22 09:50:34] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:50:41] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_006.mp4
+[2026-08-22 09:50:41] INFO     server — [Pipeline]   ✓ Short #6 rendered → short_006.mp4
+[2026-08-22 09:50:41] INFO     server — [Pipeline]   Rendering Short #7/47: Let me come watch the replay real quick. I'm ...
+[2026-08-22 09:50:41] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:50:41] INFO     src.video_extractor — Extracting clip: 00:21:01.771 -> 00:21:18.147 (16.38s)
+[2026-08-22 09:50:41] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1251.772 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.376 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:50:43] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:50:43] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 392 frames
+[2026-08-22 09:50:55] INFO     src.face_tracker — Face tracking complete: 392/392 frames with primary face (100.0%)
+[2026-08-22 09:50:55] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (392 frames)
+[2026-08-22 09:50:55] INFO     src.reframer — Crop plan ready: 392 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:50:55] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (392 frames)…
+[2026-08-22 09:51:17] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:51:17] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:51:19] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:51:19] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (392 frames, 14 chunks)
+[2026-08-22 09:52:43] INFO     src.caption_renderer — Captioned 374/392 frames with animated word highlighting
+[2026-08-22 09:52:43] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:52:52] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_007.mp4
+[2026-08-22 09:52:52] INFO     server — [Pipeline]   ✓ Short #7 rendered → short_007.mp4
+[2026-08-22 09:52:52] INFO     server — [Pipeline]   Rendering Short #8/47: Team 6 versus Team 5. Team 5 on 3. 1, 2, 3. T...
+[2026-08-22 09:52:53] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:52:53] INFO     src.video_extractor — Extracting clip: 00:07:56.720 -> 00:08:13.220 (16.50s)
+[2026-08-22 09:52:53] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 466.720 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.500 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:52:55] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:52:55] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 396 frames
+[2026-08-22 09:53:08] INFO     src.face_tracker — Face tracking complete: 346/396 frames with primary face (87.4%)
+[2026-08-22 09:53:08] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (396 frames)
+[2026-08-22 09:53:08] INFO     src.reframer — Crop plan ready: 396 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:53:08] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (396 frames)…
+[2026-08-22 09:53:30] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:53:30] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:53:33] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:53:33] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (396 frames, 13 chunks)
+[2026-08-22 09:54:52] INFO     src.caption_renderer — Captioned 396/396 frames with animated word highlighting
+[2026-08-22 09:54:52] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:54:59] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_008.mp4
+[2026-08-22 09:54:59] INFO     server — [Pipeline]   ✓ Short #8 rendered → short_008.mp4
+[2026-08-22 09:55:00] INFO     server — [Pipeline]   Rendering Short #9/47: Come on, Ted. Come on, Ted. Yes! Now go, 2! N...
+[2026-08-22 09:55:00] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:55:00] INFO     src.video_extractor — Extracting clip: 00:17:43.690 -> 00:17:59.829 (16.14s)
+[2026-08-22 09:55:00] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1053.690 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.140 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:55:02] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:55:02] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 386 frames
+[2026-08-22 09:55:15] INFO     src.face_tracker — Face tracking complete: 386/386 frames with primary face (100.0%)
+[2026-08-22 09:55:15] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (386 frames)
+[2026-08-22 09:55:15] INFO     src.reframer — Crop plan ready: 386 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:55:15] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (386 frames)…
+[2026-08-22 09:55:36] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:55:36] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:55:38] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:55:39] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (386 frames, 17 chunks)
+[2026-08-22 09:56:44] INFO     src.caption_renderer — Captioned 360/386 frames with animated word highlighting
+[2026-08-22 09:56:44] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:56:51] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_009.mp4
+[2026-08-22 09:56:51] INFO     server — [Pipeline]   ✓ Short #9 rendered → short_009.mp4
+[2026-08-22 09:56:51] INFO     server — [Pipeline]   Rendering Short #10/47: Under five minutes left. Tons of jumps. This ...
+[2026-08-22 09:56:51] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:56:51] INFO     src.video_extractor — Extracting clip: 00:19:02.470 -> 00:19:19.390 (16.92s)
+[2026-08-22 09:56:51] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1132.470 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.920 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:56:54] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:56:54] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 406 frames
+[2026-08-22 09:57:06] INFO     src.face_tracker — Face tracking complete: 406/406 frames with primary face (100.0%)
+[2026-08-22 09:57:06] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (406 frames)
+[2026-08-22 09:57:06] INFO     src.reframer — Crop plan ready: 406 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:57:06] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (406 frames)…
+[2026-08-22 09:57:29] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:57:29] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:57:32] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:57:32] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (406 frames, 12 chunks)
+[2026-08-22 09:58:47] INFO     src.caption_renderer — Captioned 342/406 frames with animated word highlighting
+[2026-08-22 09:58:47] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 09:58:55] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_010.mp4
+[2026-08-22 09:58:55] INFO     server — [Pipeline]   ✓ Short #10 rendered → short_010.mp4
+[2026-08-22 09:58:55] INFO     server — [Pipeline]   Rendering Short #11/47: Team 6 is falling! No! No! I think you're don...
+[2026-08-22 09:58:55] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 09:58:55] INFO     src.video_extractor — Extracting clip: 00:08:19.220 -> 00:08:37.559 (18.34s)
+[2026-08-22 09:58:55] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 489.220 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 18.340 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:58:57] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 09:58:57] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 439 frames
+[2026-08-22 09:59:10] INFO     src.face_tracker — Face tracking complete: 429/439 frames with primary face (97.7%)
+[2026-08-22 09:59:10] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (439 frames)
+[2026-08-22 09:59:10] INFO     src.reframer — Crop plan ready: 439 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 09:59:10] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (439 frames)…
+[2026-08-22 09:59:36] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 09:59:36] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 09:59:39] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 09:59:39] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (439 frames, 9 chunks)
+[2026-08-22 10:01:05] INFO     src.caption_renderer — Captioned 439/439 frames with animated word highlighting
+[2026-08-22 10:01:05] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:01:14] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_011.mp4
+[2026-08-22 10:01:14] INFO     server — [Pipeline]   ✓ Short #11 rendered → short_011.mp4
+[2026-08-22 10:01:15] INFO     server — [Pipeline]   Rendering Short #12/47: Almost there. So close. 30 seconds. Oh, my Go...
+[2026-08-22 10:01:15] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:01:15] INFO     src.video_extractor — Extracting clip: 00:06:24.920 -> 00:06:44.125 (19.20s)
+[2026-08-22 10:01:15] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 374.921 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.204 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:01:17] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:01:17] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 461 frames
+[2026-08-22 10:01:31] INFO     src.face_tracker — Face tracking complete: 411/461 frames with primary face (89.2%)
+[2026-08-22 10:01:31] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (461 frames)
+[2026-08-22 10:01:31] INFO     src.reframer — Crop plan ready: 461 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:01:31] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (461 frames)…
+[2026-08-22 10:01:58] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:01:58] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:02:01] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:02:01] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (460 frames, 10 chunks)
+[2026-08-22 10:03:02] INFO     src.caption_renderer — Captioned 275/460 frames with animated word highlighting
+[2026-08-22 10:03:02] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:03:11] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_012.mp4
+[2026-08-22 10:03:11] INFO     server — [Pipeline]   ✓ Short #12 rendered → short_012.mp4
+[2026-08-22 10:03:11] INFO     server — [Pipeline]   Rendering Short #13/47: One will drop you and one will hold you. Star...
+[2026-08-22 10:03:11] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:03:11] INFO     src.video_extractor — Extracting clip: 00:16:48.049 -> 00:17:04.029 (15.98s)
+[2026-08-22 10:03:11] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 998.050 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 15.980 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:03:13] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:03:13] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 383 frames
+[2026-08-22 10:03:25] INFO     src.face_tracker — Face tracking complete: 383/383 frames with primary face (100.0%)
+[2026-08-22 10:03:25] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (383 frames)
+[2026-08-22 10:03:25] INFO     src.reframer — Crop plan ready: 383 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:03:25] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (383 frames)…
+[2026-08-22 10:03:46] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:03:46] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:03:49] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:03:49] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (383 frames, 14 chunks)
+[2026-08-22 10:05:05] INFO     src.caption_renderer — Captioned 365/383 frames with animated word highlighting
+[2026-08-22 10:05:05] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:05:12] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_013.mp4
+[2026-08-22 10:05:12] INFO     server — [Pipeline]   ✓ Short #13 rendered → short_013.mp4
+[2026-08-22 10:05:12] INFO     server — [Pipeline]   Rendering Short #14/47: Three jumps, one minute. Sharad, go. Sharad, ...
+[2026-08-22 10:05:12] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:05:12] INFO     src.video_extractor — Extracting clip: 00:20:10.894 -> 00:20:31.220 (20.33s)
+[2026-08-22 10:05:12] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1200.895 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 20.325 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:05:15] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:05:15] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 487 frames
+[2026-08-22 10:05:29] INFO     src.face_tracker — Face tracking complete: 487/487 frames with primary face (100.0%)
+[2026-08-22 10:05:29] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (487 frames)
+[2026-08-22 10:05:29] INFO     src.reframer — Crop plan ready: 487 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:05:29] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (487 frames)…
+[2026-08-22 10:05:56] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:05:56] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:05:59] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:05:59] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (487 frames, 20 chunks)
+[2026-08-22 10:07:21] INFO     src.caption_renderer — Captioned 418/487 frames with animated word highlighting
+[2026-08-22 10:07:21] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:07:31] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_014.mp4
+[2026-08-22 10:07:31] INFO     server — [Pipeline]   ✓ Short #14 rendered → short_014.mp4
+[2026-08-22 10:07:31] INFO     server — [Pipeline]   Rendering Short #15/47: I don't know if I'd be cheering because inste...
+[2026-08-22 10:07:31] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:07:31] INFO     src.video_extractor — Extracting clip: 00:10:40.177 -> 00:10:58.083 (17.91s)
+[2026-08-22 10:07:31] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 630.178 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.906 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:07:33] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:07:33] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 430 frames
+[2026-08-22 10:07:46] INFO     src.face_tracker — Face tracking complete: 430/430 frames with primary face (100.0%)
+[2026-08-22 10:07:47] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (430 frames)
+[2026-08-22 10:07:47] INFO     src.reframer — Crop plan ready: 430 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:07:47] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (430 frames)…
+[2026-08-22 10:08:13] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:08:13] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:08:16] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:08:16] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (429 frames, 15 chunks)
+[2026-08-22 10:09:52] INFO     src.caption_renderer — Captioned 412/429 frames with animated word highlighting
+[2026-08-22 10:09:52] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:10:01] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_015.mp4
+[2026-08-22 10:10:01] INFO     server — [Pipeline]   ✓ Short #15 rendered → short_015.mp4
+[2026-08-22 10:10:01] INFO     server — [Pipeline]   Rendering Short #16/47: Start the timer. Oh my God. The challenge is ...
+[2026-08-22 10:10:01] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:10:01] INFO     src.video_extractor — Extracting clip: 00:05:09.531 -> 00:05:25.220 (15.69s)
+[2026-08-22 10:10:01] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 299.531 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 15.689 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:10:03] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:10:03] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 376 frames
+[2026-08-22 10:10:14] INFO     src.face_tracker — Face tracking complete: 371/376 frames with primary face (98.7%)
+[2026-08-22 10:10:14] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (376 frames)
+[2026-08-22 10:10:14] INFO     src.reframer — Crop plan ready: 376 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:10:14] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (376 frames)…
+[2026-08-22 10:10:36] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:10:36] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:10:39] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:10:39] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (376 frames, 6 chunks)
+[2026-08-22 10:11:29] INFO     src.caption_renderer — Captioned 203/376 frames with animated word highlighting
+[2026-08-22 10:11:29] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:11:35] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_016.mp4
+[2026-08-22 10:11:36] INFO     server — [Pipeline]   ✓ Short #16 rendered → short_016.mp4
+[2026-08-22 10:11:36] INFO     server — [Pipeline]   Rendering Short #17/47: You had an umbrella? Yeah. Sorry, bud. Look a...
+[2026-08-22 10:11:36] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:11:36] INFO     src.video_extractor — Extracting clip: 00:05:41.579 -> 00:06:01.305 (19.73s)
+[2026-08-22 10:11:36] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 331.580 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.726 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:11:38] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:11:38] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 473 frames
+[2026-08-22 10:11:52] INFO     src.face_tracker — Face tracking complete: 473/473 frames with primary face (100.0%)
+[2026-08-22 10:11:52] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (473 frames)
+[2026-08-22 10:11:52] INFO     src.reframer — Crop plan ready: 473 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:11:53] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (473 frames)…
+[2026-08-22 10:12:21] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:12:21] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:12:24] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:12:24] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (473 frames, 12 chunks)
+[2026-08-22 10:13:35] INFO     src.caption_renderer — Captioned 267/473 frames with animated word highlighting
+[2026-08-22 10:13:35] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:13:44] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_017.mp4
+[2026-08-22 10:13:45] INFO     server — [Pipeline]   ✓ Short #17 rendered → short_017.mp4
+[2026-08-22 10:13:45] INFO     server — [Pipeline]   Rendering Short #18/47: Odd. Even. Odd or even? Even odds. What? What...
+[2026-08-22 10:13:45] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:13:45] INFO     src.video_extractor — Extracting clip: 00:11:32.389 -> 00:11:47.750 (15.36s)
+[2026-08-22 10:13:45] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 682.390 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 15.360 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:13:46] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:13:46] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 369 frames
+[2026-08-22 10:13:57] INFO     src.face_tracker — Face tracking complete: 369/369 frames with primary face (100.0%)
+[2026-08-22 10:13:57] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (369 frames)
+[2026-08-22 10:13:57] INFO     src.reframer — Crop plan ready: 369 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:13:57] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (369 frames)…
+[2026-08-22 10:14:18] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:14:18] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:14:20] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:14:20] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (368 frames, 12 chunks)
+[2026-08-22 10:15:31] INFO     src.caption_renderer — Captioned 319/368 frames with animated word highlighting
+[2026-08-22 10:15:31] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:15:38] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_018.mp4
+[2026-08-22 10:15:38] INFO     server — [Pipeline]   ✓ Short #18 rendered → short_018.mp4
+[2026-08-22 10:15:39] INFO     server — [Pipeline]   Rendering Short #19/47: Tails. It's tails. Yo! Oh, no. I'll give you ...
+[2026-08-22 10:15:39] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:15:39] INFO     src.video_extractor — Extracting clip: 00:12:51.105 -> 00:13:19.220 (28.12s)
+[2026-08-22 10:15:39] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 761.105 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 28.115 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:15:42] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:15:42] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 674 frames
+[2026-08-22 10:16:02] INFO     src.face_tracker — Face tracking complete: 674/674 frames with primary face (100.0%)
+[2026-08-22 10:16:02] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (674 frames)
+[2026-08-22 10:16:02] INFO     src.reframer — Crop plan ready: 674 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:16:02] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (674 frames)…
+[2026-08-22 10:16:41] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:16:41] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:16:45] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:16:45] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (674 frames, 16 chunks)
+[2026-08-22 10:18:33] INFO     src.caption_renderer — Captioned 507/674 frames with animated word highlighting
+[2026-08-22 10:18:33] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:18:44] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_019.mp4
+[2026-08-22 10:18:45] INFO     server — [Pipeline]   ✓ Short #19 rendered → short_019.mp4
+[2026-08-22 10:18:45] INFO     server — [Pipeline]   Rendering Short #20/47: Let's test my hypothesis. Raise your hand if ...
+[2026-08-22 10:18:45] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:18:45] INFO     src.video_extractor — Extracting clip: 00:22:20.311 -> 00:22:39.782 (19.47s)
+[2026-08-22 10:18:45] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1330.312 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.471 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:18:47] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:18:47] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 466 frames
+[2026-08-22 10:19:01] INFO     src.face_tracker — Face tracking complete: 466/466 frames with primary face (100.0%)
+[2026-08-22 10:19:01] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (466 frames)
+[2026-08-22 10:19:01] INFO     src.reframer — Crop plan ready: 466 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:19:01] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (466 frames)…
+[2026-08-22 10:19:28] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:19:28] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:19:31] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:19:31] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (466 frames, 15 chunks)
+[2026-08-22 10:21:05] INFO     src.caption_renderer — Captioned 395/466 frames with animated word highlighting
+[2026-08-22 10:21:05] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:21:12] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_020.mp4
+[2026-08-22 10:21:12] INFO     server — [Pipeline]   ✓ Short #20 rendered → short_020.mp4
+[2026-08-22 10:21:12] INFO     server — [Pipeline]   Rendering Short #21/47: I recreated every single set from Squid Game ...
+[2026-08-22 10:21:12] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:21:12] INFO     src.video_extractor — Extracting clip: 00:00:00.177 -> 00:00:17.385 (17.21s)
+[2026-08-22 10:21:12] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 0.000 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 0.177 -t 17.209 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:21:14] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:21:14] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 412 frames
+[2026-08-22 10:21:27] INFO     src.face_tracker — Face tracking complete: 412/412 frames with primary face (100.0%)
+[2026-08-22 10:21:27] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (412 frames)
+[2026-08-22 10:21:27] INFO     src.reframer — Crop plan ready: 412 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:21:27] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (412 frames)…
+[2026-08-22 10:21:50] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:21:50] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:21:52] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:21:52] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (412 frames, 14 chunks)
+[2026-08-22 10:23:24] INFO     src.caption_renderer — Captioned 404/412 frames with animated word highlighting
+[2026-08-22 10:23:24] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:23:45] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_021.mp4
+[2026-08-22 10:23:45] INFO     server — [Pipeline]   ✓ Short #21 rendered → short_021.mp4
+[2026-08-22 10:23:46] INFO     server — [Pipeline]   Rendering Short #22/47: There it is. Hey. Green light. Red light. Loo...
+[2026-08-22 10:23:46] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:23:46] INFO     src.video_extractor — Extracting clip: 00:02:01.915 -> 00:02:19.099 (17.18s)
+[2026-08-22 10:23:46] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 111.915 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.185 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:23:52] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:23:52] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 412 frames
+[2026-08-22 10:24:10] INFO     src.face_tracker — Face tracking complete: 412/412 frames with primary face (100.0%)
+[2026-08-22 10:24:11] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (412 frames)
+[2026-08-22 10:24:11] INFO     src.reframer — Crop plan ready: 412 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:24:11] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (412 frames)…
+[2026-08-22 10:24:40] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:24:40] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:24:45] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:24:45] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (412 frames, 13 chunks)
+[2026-08-22 10:26:08] INFO     src.caption_renderer — Captioned 345/412 frames with animated word highlighting
+[2026-08-22 10:26:08] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:26:16] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_022.mp4
+[2026-08-22 10:26:16] INFO     server — [Pipeline]   ✓ Short #22 rendered → short_022.mp4
+[2026-08-22 10:26:16] INFO     server — [Pipeline]   Rendering Short #23/47: Let's go! Yeah! Yo, the main character surviv...
+[2026-08-22 10:26:16] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:26:16] INFO     src.video_extractor — Extracting clip: 00:15:13.220 -> 00:15:29.539 (16.32s)
+[2026-08-22 10:26:16] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 903.220 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.320 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:26:19] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:26:19] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 391 frames
+[2026-08-22 10:26:32] INFO     src.face_tracker — Face tracking complete: 356/391 frames with primary face (91.0%)
+[2026-08-22 10:26:32] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (391 frames)
+[2026-08-22 10:26:32] INFO     src.reframer — Crop plan ready: 391 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:26:32] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (391 frames)…
+[2026-08-22 10:26:58] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:26:58] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:27:00] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:27:00] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (391 frames, 12 chunks)
+[2026-08-22 10:28:25] INFO     src.caption_renderer — Captioned 391/391 frames with animated word highlighting
+[2026-08-22 10:28:25] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:28:31] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_023.mp4
+[2026-08-22 10:28:31] INFO     server — [Pipeline]   ✓ Short #23 rendered → short_023.mp4
+[2026-08-22 10:28:31] INFO     server — [Pipeline]   Rendering Short #24/47: Thank you for coming out. And all of you are ...
+[2026-08-22 10:28:31] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:28:31] INFO     src.video_extractor — Extracting clip: 00:21:23.349 -> 00:21:40.569 (17.22s)
+[2026-08-22 10:28:31] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1273.350 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.220 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:28:33] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:28:34] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 413 frames
+[2026-08-22 10:28:42] INFO     src.face_tracker — Face tracking complete: 413/413 frames with primary face (100.0%)
+[2026-08-22 10:28:42] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (413 frames)
+[2026-08-22 10:28:42] INFO     src.reframer — Crop plan ready: 413 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:28:42] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (413 frames)…
+[2026-08-22 10:29:00] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:29:00] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:29:03] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:29:03] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (413 frames, 12 chunks)
+[2026-08-22 10:29:55] INFO     src.caption_renderer — Captioned 386/413 frames with animated word highlighting
+[2026-08-22 10:29:55] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:30:00] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_024.mp4
+[2026-08-22 10:30:00] INFO     server — [Pipeline]   ✓ Short #24 rendered → short_024.mp4
+[2026-08-22 10:30:00] INFO     server — [Pipeline]   Rendering Short #25/47: Oh my God! If it makes you feel better, I'm g...
+[2026-08-22 10:30:00] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:30:00] INFO     src.video_extractor — Extracting clip: 00:25:05.680 -> 00:25:26.380 (20.70s)
+[2026-08-22 10:30:00] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1495.680 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 20.700 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:30:02] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:30:02] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 496 frames
+[2026-08-22 10:30:11] INFO     src.face_tracker — Face tracking complete: 496/496 frames with primary face (100.0%)
+[2026-08-22 10:30:11] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (496 frames)
+[2026-08-22 10:30:11] INFO     src.reframer — Crop plan ready: 496 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:30:11] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (496 frames)…
+[2026-08-22 10:30:30] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:30:30] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:30:33] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:30:33] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (496 frames, 13 chunks)
+[2026-08-22 10:31:26] INFO     src.caption_renderer — Captioned 465/496 frames with animated word highlighting
+[2026-08-22 10:31:26] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:31:32] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_025.mp4
+[2026-08-22 10:31:32] INFO     server — [Pipeline]   ✓ Short #25 rendered → short_025.mp4
+[2026-08-22 10:31:32] INFO     server — [Pipeline]   Rendering Short #26/47: Red light. We have our first 2 finishers over...
+[2026-08-22 10:31:32] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:31:32] INFO     src.video_extractor — Extracting clip: 00:02:19.099 -> 00:02:38.640 (19.54s)
+[2026-08-22 10:31:32] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 129.100 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.541 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:31:34] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:31:34] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 468 frames
+[2026-08-22 10:31:42] INFO     src.face_tracker — Face tracking complete: 468/468 frames with primary face (100.0%)
+[2026-08-22 10:31:42] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (468 frames)
+[2026-08-22 10:31:42] INFO     src.reframer — Crop plan ready: 468 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:31:42] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (468 frames)…
+[2026-08-22 10:31:57] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:31:57] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:32:00] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:32:00] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (468 frames, 15 chunks)
+[2026-08-22 10:32:45] INFO     src.caption_renderer — Captioned 425/468 frames with animated word highlighting
+[2026-08-22 10:32:45] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:32:50] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_026.mp4
+[2026-08-22 10:32:50] INFO     server — [Pipeline]   ✓ Short #26 rendered → short_026.mp4
+[2026-08-22 10:32:50] INFO     server — [Pipeline]   Rendering Short #27/47: We're trying to recruit the biggest people so...
+[2026-08-22 10:32:50] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:32:50] INFO     src.video_extractor — Extracting clip: 00:07:22.939 -> 00:07:38.759 (15.82s)
+[2026-08-22 10:32:50] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 432.940 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 15.820 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:32:51] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:32:51] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 380 frames
+[2026-08-22 10:32:58] INFO     src.face_tracker — Face tracking complete: 380/380 frames with primary face (100.0%)
+[2026-08-22 10:32:58] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (380 frames)
+[2026-08-22 10:32:58] INFO     src.reframer — Crop plan ready: 380 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:32:58] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (380 frames)…
+[2026-08-22 10:33:13] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:33:13] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:33:15] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:33:15] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (379 frames, 14 chunks)
+[2026-08-22 10:33:58] INFO     src.caption_renderer — Captioned 336/379 frames with animated word highlighting
+[2026-08-22 10:33:58] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:34:03] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_027.mp4
+[2026-08-22 10:34:03] INFO     server — [Pipeline]   ✓ Short #27 rendered → short_027.mp4
+[2026-08-22 10:34:03] INFO     server — [Pipeline]   Rendering Short #28/47: In this game with Team 9 versus Team 11, they...
+[2026-08-22 10:34:03] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:34:03] INFO     src.video_extractor — Extracting clip: 00:10:04.301 -> 00:10:21.369 (17.07s)
+[2026-08-22 10:34:03] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 594.301 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.068 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:34:04] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:34:04] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 410 frames
+[2026-08-22 10:34:11] INFO     src.face_tracker — Face tracking complete: 400/410 frames with primary face (97.6%)
+[2026-08-22 10:34:11] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (410 frames)
+[2026-08-22 10:34:11] INFO     src.reframer — Crop plan ready: 410 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:34:11] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (410 frames)…
+[2026-08-22 10:34:26] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:34:26] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:34:29] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:34:29] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (409 frames, 14 chunks)
+[2026-08-22 10:35:06] INFO     src.caption_renderer — Captioned 311/409 frames with animated word highlighting
+[2026-08-22 10:35:06] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:35:10] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_028.mp4
+[2026-08-22 10:35:10] INFO     server — [Pipeline]   ✓ Short #28 rendered → short_028.mp4
+[2026-08-22 10:35:10] INFO     server — [Pipeline]   Rendering Short #29/47: All right. She survived the first jump. Okay....
+[2026-08-22 10:35:10] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:35:10] INFO     src.video_extractor — Extracting clip: 00:16:58.389 -> 00:17:16.349 (17.96s)
+[2026-08-22 10:35:10] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1008.390 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.960 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:35:12] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:35:12] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 431 frames
+[2026-08-22 10:35:19] INFO     src.face_tracker — Face tracking complete: 431/431 frames with primary face (100.0%)
+[2026-08-22 10:35:19] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (431 frames)
+[2026-08-22 10:35:19] INFO     src.reframer — Crop plan ready: 431 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:35:19] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (431 frames)…
+[2026-08-22 10:35:33] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:35:33] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:35:36] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:35:36] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (431 frames, 13 chunks)
+[2026-08-22 10:36:25] INFO     src.caption_renderer — Captioned 423/431 frames with animated word highlighting
+[2026-08-22 10:36:25] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:36:29] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_029.mp4
+[2026-08-22 10:36:29] INFO     server — [Pipeline]   ✓ Short #29 rendered → short_029.mp4
+[2026-08-22 10:36:30] INFO     server — [Pipeline]   Rendering Short #30/47: All right, he's going. 6, go! All right, now ...
+[2026-08-22 10:36:30] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:36:30] INFO     src.video_extractor — Extracting clip: 00:20:25.799 -> 00:20:40.900 (15.10s)
+[2026-08-22 10:36:30] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1215.800 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 15.100 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:36:31] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:36:31] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 363 frames
+[2026-08-22 10:36:37] INFO     src.face_tracker — Face tracking complete: 358/363 frames with primary face (98.6%)
+[2026-08-22 10:36:37] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (363 frames)
+[2026-08-22 10:36:37] INFO     src.reframer — Crop plan ready: 363 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:36:37] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (363 frames)…
+[2026-08-22 10:36:49] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:36:49] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:36:51] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:36:51] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (362 frames, 17 chunks)
+[2026-08-22 10:37:31] INFO     src.caption_renderer — Captioned 362/362 frames with animated word highlighting
+[2026-08-22 10:37:31] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:37:34] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_030.mp4
+[2026-08-22 10:37:34] INFO     server — [Pipeline]   ✓ Short #30 rendered → short_030.mp4
+[2026-08-22 10:37:34] INFO     server — [Pipeline]   Rendering Short #31/47: You have stepped on the line. You are good. Y...
+[2026-08-22 10:37:34] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:37:34] INFO     src.video_extractor — Extracting clip: 00:03:01.687 -> 00:03:20.860 (19.17s)
+[2026-08-22 10:37:34] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 171.687 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.173 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:37:36] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:37:36] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 459 frames
+[2026-08-22 10:37:44] INFO     src.face_tracker — Face tracking complete: 459/459 frames with primary face (100.0%)
+[2026-08-22 10:37:45] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (459 frames)
+[2026-08-22 10:37:45] INFO     src.reframer — Crop plan ready: 459 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:37:45] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (459 frames)…
+[2026-08-22 10:38:02] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:38:02] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:38:05] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:38:05] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (459 frames, 13 chunks)
+[2026-08-22 10:38:45] INFO     src.caption_renderer — Captioned 397/459 frames with animated word highlighting
+[2026-08-22 10:38:45] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:38:50] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_031.mp4
+[2026-08-22 10:38:50] INFO     server — [Pipeline]   ✓ Short #31 rendered → short_031.mp4
+[2026-08-22 10:38:50] INFO     server — [Pipeline]   Rendering Short #32/47: Red light. Only 2 minutes remain. Arnold make...
+[2026-08-22 10:38:50] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:38:50] INFO     src.video_extractor — Extracting clip: 00:02:39.691 -> 00:03:00.562 (20.87s)
+[2026-08-22 10:38:50] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 149.691 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 20.871 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:38:52] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:38:52] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 501 frames
+[2026-08-22 10:39:01] INFO     src.face_tracker — Face tracking complete: 501/501 frames with primary face (100.0%)
+[2026-08-22 10:39:01] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (501 frames)
+[2026-08-22 10:39:01] INFO     src.reframer — Crop plan ready: 501 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:39:01] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (501 frames)…
+[2026-08-22 10:39:21] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:39:21] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:39:24] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:39:24] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (500 frames, 11 chunks)
+[2026-08-22 10:40:09] INFO     src.caption_renderer — Captioned 377/500 frames with animated word highlighting
+[2026-08-22 10:40:09] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:40:14] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_032.mp4
+[2026-08-22 10:40:15] INFO     server — [Pipeline]   ✓ Short #32 rendered → short_032.mp4
+[2026-08-22 10:40:15] INFO     server — [Pipeline]   Rendering Short #33/47: Oh, it's going over to 456! He's going! Oh, o...
+[2026-08-22 10:40:15] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:40:15] INFO     src.video_extractor — Extracting clip: 00:09:37.591 -> 00:09:54.854 (17.26s)
+[2026-08-22 10:40:15] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 567.591 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.263 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:40:16] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:40:16] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 413 frames
+[2026-08-22 10:40:23] INFO     src.face_tracker — Face tracking complete: 413/413 frames with primary face (100.0%)
+[2026-08-22 10:40:23] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (413 frames)
+[2026-08-22 10:40:23] INFO     src.reframer — Crop plan ready: 413 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:40:23] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (413 frames)…
+[2026-08-22 10:40:38] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:40:38] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:40:41] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:40:41] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (413 frames, 10 chunks)
+[2026-08-22 10:41:20] INFO     src.caption_renderer — Captioned 338/413 frames with animated word highlighting
+[2026-08-22 10:41:20] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:41:24] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_033.mp4
+[2026-08-22 10:41:24] INFO     server — [Pipeline]   ✓ Short #33 rendered → short_033.mp4
+[2026-08-22 10:41:24] INFO     server — [Pipeline]   Rendering Short #34/47: We're throwing it at the bricks, right? If yo...
+[2026-08-22 10:41:24] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:41:24] INFO     src.video_extractor — Extracting clip: 00:11:47.750 -> 00:12:06.120 (18.37s)
+[2026-08-22 10:41:24] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 697.750 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 18.370 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:41:26] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:41:26] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 440 frames
+[2026-08-22 10:41:33] INFO     src.face_tracker — Face tracking complete: 440/440 frames with primary face (100.0%)
+[2026-08-22 10:41:33] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (440 frames)
+[2026-08-22 10:41:33] INFO     src.reframer — Crop plan ready: 440 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:41:33] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (440 frames)…
+[2026-08-22 10:41:49] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:41:49] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:41:51] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:41:51] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (440 frames, 17 chunks)
+[2026-08-22 10:42:44] INFO     src.caption_renderer — Captioned 440/440 frames with animated word highlighting
+[2026-08-22 10:42:44] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:42:48] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_034.mp4
+[2026-08-22 10:42:48] INFO     server — [Pipeline]   ✓ Short #34 rendered → short_034.mp4
+[2026-08-22 10:42:48] INFO     server — [Pipeline]   Rendering Short #35/47: We have 9 winners so far, which means only 7 ...
+[2026-08-22 10:42:48] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:42:48] INFO     src.video_extractor — Extracting clip: 00:14:59.710 -> 00:15:19.080 (19.37s)
+[2026-08-22 10:42:48] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 889.710 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.370 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:42:50] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:42:50] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 464 frames
+[2026-08-22 10:42:58] INFO     src.face_tracker — Face tracking complete: 464/464 frames with primary face (100.0%)
+[2026-08-22 10:42:58] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (464 frames)
+[2026-08-22 10:42:58] INFO     src.reframer — Crop plan ready: 464 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:42:58] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (464 frames)…
+[2026-08-22 10:43:15] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:43:15] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:43:18] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:43:18] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (464 frames, 18 chunks)
+[2026-08-22 10:44:14] INFO     src.caption_renderer — Captioned 464/464 frames with animated word highlighting
+[2026-08-22 10:44:14] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:44:19] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_035.mp4
+[2026-08-22 10:44:19] INFO     server — [Pipeline]   ✓ Short #35 rendered → short_035.mp4
+[2026-08-22 10:44:19] INFO     server — [Pipeline]   Rendering Short #36/47: Oh, you said— oh! Yo, wait. He said early. He...
+[2026-08-22 10:44:19] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:44:19] INFO     src.video_extractor — Extracting clip: 00:23:30.980 -> 00:23:56.710 (25.73s)
+[2026-08-22 10:44:19] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1400.980 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 25.730 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:44:21] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:44:21] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 617 frames
+[2026-08-22 10:44:31] INFO     src.face_tracker — Face tracking complete: 617/617 frames with primary face (100.0%)
+[2026-08-22 10:44:31] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (617 frames)
+[2026-08-22 10:44:31] INFO     src.reframer — Crop plan ready: 617 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:44:31] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (617 frames)…
+[2026-08-22 10:44:56] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:44:56] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:44:59] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:44:59] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (617 frames, 23 chunks)
+[2026-08-22 10:46:03] INFO     src.caption_renderer — Captioned 584/617 frames with animated word highlighting
+[2026-08-22 10:46:03] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:46:09] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_036.mp4
+[2026-08-22 10:46:09] INFO     server — [Pipeline]   ✓ Short #36 rendered → short_036.mp4
+[2026-08-22 10:46:10] INFO     server — [Pipeline]   Rendering Short #37/47: Yo, it'd be funny if she just got out. As you...
+[2026-08-22 10:46:10] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:46:10] INFO     src.video_extractor — Extracting clip: 00:01:50.216 -> 00:02:07.980 (17.76s)
+[2026-08-22 10:46:10] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 100.217 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.763 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:46:11] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:46:11] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 426 frames
+[2026-08-22 10:46:19] INFO     src.face_tracker — Face tracking complete: 421/426 frames with primary face (98.8%)
+[2026-08-22 10:46:19] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (426 frames)
+[2026-08-22 10:46:19] INFO     src.reframer — Crop plan ready: 426 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:46:19] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (426 frames)…
+[2026-08-22 10:46:35] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:46:35] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:46:37] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:46:37] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (426 frames, 11 chunks)
+[2026-08-22 10:47:13] INFO     src.caption_renderer — Captioned 302/426 frames with animated word highlighting
+[2026-08-22 10:47:13] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:47:18] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_037.mp4
+[2026-08-22 10:47:18] INFO     server — [Pipeline]   ✓ Short #37 rendered → short_037.mp4
+[2026-08-22 10:47:18] INFO     server — [Pipeline]   Rendering Short #38/47: Green light. Red light. You're definitely— so...
+[2026-08-22 10:47:18] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:47:18] INFO     src.video_extractor — Extracting clip: 00:03:15.379 -> 00:03:31.500 (16.12s)
+[2026-08-22 10:47:18] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 185.380 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.120 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:47:19] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:47:19] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 386 frames
+[2026-08-22 10:47:26] INFO     src.face_tracker — Face tracking complete: 386/386 frames with primary face (100.0%)
+[2026-08-22 10:47:26] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (386 frames)
+[2026-08-22 10:47:26] INFO     src.reframer — Crop plan ready: 386 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:47:27] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (386 frames)…
+[2026-08-22 10:47:40] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:47:40] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:47:43] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:47:43] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (386 frames, 11 chunks)
+[2026-08-22 10:48:22] INFO     src.caption_renderer — Captioned 363/386 frames with animated word highlighting
+[2026-08-22 10:48:22] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:48:26] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_038.mp4
+[2026-08-22 10:48:26] INFO     server — [Pipeline]   ✓ Short #38 rendered → short_038.mp4
+[2026-08-22 10:48:26] INFO     server — [Pipeline]   Rendering Short #39/47: We did our research. I have to come home to t...
+[2026-08-22 10:48:26] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:48:26] INFO     src.video_extractor — Extracting clip: 00:11:06.590 -> 00:11:22.029 (15.44s)
+[2026-08-22 10:48:26] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 656.590 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 15.440 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:48:28] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:48:28] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 370 frames
+[2026-08-22 10:48:34] INFO     src.face_tracker — Face tracking complete: 370/370 frames with primary face (100.0%)
+[2026-08-22 10:48:34] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (370 frames)
+[2026-08-22 10:48:34] INFO     src.reframer — Crop plan ready: 370 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:48:34] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (370 frames)…
+[2026-08-22 10:48:47] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:48:47] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:48:50] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:48:50] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (370 frames, 18 chunks)
+[2026-08-22 10:49:34] INFO     src.caption_renderer — Captioned 365/370 frames with animated word highlighting
+[2026-08-22 10:49:34] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:49:39] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_039.mp4
+[2026-08-22 10:49:39] INFO     server — [Pipeline]   ✓ Short #39 rendered → short_039.mp4
+[2026-08-22 10:49:39] INFO     server — [Pipeline]   Rendering Short #40/47: Oh. And as you can see, every single player h...
+[2026-08-22 10:49:39] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:49:39] INFO     src.video_extractor — Extracting clip: 00:00:24.254 -> 00:00:41.060 (16.81s)
+[2026-08-22 10:49:39] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 14.255 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 16.805 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:49:41] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:49:41] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 403 frames
+[2026-08-22 10:49:48] INFO     src.face_tracker — Face tracking complete: 403/403 frames with primary face (100.0%)
+[2026-08-22 10:49:48] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (403 frames)
+[2026-08-22 10:49:48] INFO     src.reframer — Crop plan ready: 403 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:49:48] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (403 frames)…
+[2026-08-22 10:50:03] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:50:03] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:50:05] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:50:05] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (403 frames, 13 chunks)
+[2026-08-22 10:50:46] INFO     src.caption_renderer — Captioned 354/403 frames with animated word highlighting
+[2026-08-22 10:50:46] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:50:50] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_040.mp4
+[2026-08-22 10:50:50] INFO     server — [Pipeline]   ✓ Short #40 rendered → short_040.mp4
+[2026-08-22 10:50:51] INFO     server — [Pipeline]   Rendering Short #41/47: Go for it. Just hit right there. Oh, don't fa...
+[2026-08-22 10:50:51] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:50:51] INFO     src.video_extractor — Extracting clip: 00:13:19.220 -> 00:13:37.259 (18.04s)
+[2026-08-22 10:50:51] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 789.220 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 18.040 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:50:53] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:50:53] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 432 frames
+[2026-08-22 10:51:00] INFO     src.face_tracker — Face tracking complete: 432/432 frames with primary face (100.0%)
+[2026-08-22 10:51:00] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (432 frames)
+[2026-08-22 10:51:00] INFO     src.reframer — Crop plan ready: 432 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:51:00] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (432 frames)…
+[2026-08-22 10:51:14] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:51:14] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:51:17] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:51:17] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (432 frames, 14 chunks)
+[2026-08-22 10:52:02] INFO     src.caption_renderer — Captioned 418/432 frames with animated word highlighting
+[2026-08-22 10:52:02] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:52:07] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_041.mp4
+[2026-08-22 10:52:07] INFO     server — [Pipeline]   ✓ Short #41 rendered → short_041.mp4
+[2026-08-22 10:52:07] INFO     server — [Pipeline]   Rendering Short #42/47: Reveal the second symbol. Look at how hyped t...
+[2026-08-22 10:52:07] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:52:07] INFO     src.video_extractor — Extracting clip: 00:04:30.250 -> 00:04:49.757 (19.51s)
+[2026-08-22 10:52:07] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 260.250 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.508 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:52:09] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:52:09] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 468 frames
+[2026-08-22 10:52:18] INFO     src.face_tracker — Face tracking complete: 458/468 frames with primary face (97.9%)
+[2026-08-22 10:52:19] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (468 frames)
+[2026-08-22 10:52:19] INFO     src.reframer — Crop plan ready: 468 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:52:19] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (468 frames)…
+[2026-08-22 10:52:37] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:52:37] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:52:40] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:52:40] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (468 frames, 7 chunks)
+[2026-08-22 10:53:14] INFO     src.caption_renderer — Captioned 259/468 frames with animated word highlighting
+[2026-08-22 10:53:14] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:53:20] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_042.mp4
+[2026-08-22 10:53:20] INFO     server — [Pipeline]   ✓ Short #42 rendered → short_042.mp4
+[2026-08-22 10:53:20] INFO     server — [Pipeline]   Rendering Short #43/47: I was taking it out of the tin and it just sn...
+[2026-08-22 10:53:20] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:53:20] INFO     src.video_extractor — Extracting clip: 00:05:26.392 -> 00:05:46.711 (20.32s)
+[2026-08-22 10:53:20] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 316.393 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 20.318 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:53:22] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:53:22] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 488 frames
+[2026-08-22 10:53:33] INFO     src.face_tracker — Face tracking complete: 423/488 frames with primary face (86.7%)
+[2026-08-22 10:53:33] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (488 frames)
+[2026-08-22 10:53:33] INFO     src.reframer — Crop plan ready: 488 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:53:33] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (488 frames)…
+[2026-08-22 10:53:50] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:53:50] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:53:55] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:53:55] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (487 frames, 12 chunks)
+[2026-08-22 10:54:38] INFO     src.caption_renderer — Captioned 379/487 frames with animated word highlighting
+[2026-08-22 10:54:38] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:54:47] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_043.mp4
+[2026-08-22 10:54:48] INFO     server — [Pipeline]   ✓ Short #43 rendered → short_043.mp4
+[2026-08-22 10:54:48] INFO     server — [Pipeline]   Rendering Short #44/47: I got more, man. Yeah, I'm pretty sure. Way m...
+[2026-08-22 10:54:48] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:54:48] INFO     src.video_extractor — Extracting clip: 00:22:45.637 -> 00:23:13.339 (27.70s)
+[2026-08-22 10:54:48] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1355.638 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 27.702 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:54:52] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:54:52] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 665 frames
+[2026-08-22 10:55:08] INFO     src.face_tracker — Face tracking complete: 660/665 frames with primary face (99.2%)
+[2026-08-22 10:55:09] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (665 frames)
+[2026-08-22 10:55:09] INFO     src.reframer — Crop plan ready: 665 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:55:09] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (665 frames)…
+[2026-08-22 10:55:34] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:55:34] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:55:38] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:55:38] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (664 frames, 18 chunks)
+[2026-08-22 10:56:48] INFO     src.caption_renderer — Captioned 521/664 frames with animated word highlighting
+[2026-08-22 10:56:48] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:56:55] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_044.mp4
+[2026-08-22 10:56:55] INFO     server — [Pipeline]   ✓ Short #44 rendered → short_044.mp4
+[2026-08-22 10:56:55] INFO     server — [Pipeline]   Rendering Short #45/47: Go! Go! One more! One more jump. 20 seconds. ...
+[2026-08-22 10:56:55] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:56:55] INFO     src.video_extractor — Extracting clip: 00:20:42.079 -> 00:21:01.210 (19.13s)
+[2026-08-22 10:56:55] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1232.080 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 19.130 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:56:57] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:56:57] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 458 frames
+[2026-08-22 10:57:05] INFO     src.face_tracker — Face tracking complete: 453/458 frames with primary face (98.9%)
+[2026-08-22 10:57:05] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (458 frames)
+[2026-08-22 10:57:05] INFO     src.reframer — Crop plan ready: 458 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:57:05] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (458 frames)…
+[2026-08-22 10:57:23] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:57:23] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:57:25] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:57:25] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (458 frames, 17 chunks)
+[2026-08-22 10:58:06] INFO     src.caption_renderer — Captioned 415/458 frames with animated word highlighting
+[2026-08-22 10:58:06] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:58:11] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_045.mp4
+[2026-08-22 10:58:11] INFO     server — [Pipeline]   ✓ Short #45 rendered → short_045.mp4
+[2026-08-22 10:58:11] INFO     server — [Pipeline]   Rendering Short #46/47: Yo! He had it. Nah, he had it. He had it. At ...
+[2026-08-22 10:58:11] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:58:11] INFO     src.video_extractor — Extracting clip: 00:23:13.339 -> 00:23:30.980 (17.64s)
+[2026-08-22 10:58:11] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 1383.340 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 17.640 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:58:13] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:58:13] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 423 frames
+[2026-08-22 10:58:20] INFO     src.face_tracker — Face tracking complete: 423/423 frames with primary face (100.0%)
+[2026-08-22 10:58:20] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (423 frames)
+[2026-08-22 10:58:20] INFO     src.reframer — Crop plan ready: 423 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:58:20] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (423 frames)…
+[2026-08-22 10:58:36] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 10:58:36] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 10:58:39] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 10:58:39] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (423 frames, 13 chunks)
+[2026-08-22 10:59:22] INFO     src.caption_renderer — Captioned 363/423 frames with animated word highlighting
+[2026-08-22 10:59:22] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 10:59:27] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_046.mp4
+[2026-08-22 10:59:27] INFO     server — [Pipeline]   ✓ Short #46 rendered → short_046.mp4
+[2026-08-22 10:59:27] INFO     server — [Pipeline]   Rendering Short #47/47: I'm not saying red light. Ah, it's too late. ...
+[2026-08-22 10:59:27] INFO     src.video_extractor — Source video: 0e3GPea1Tyg.mp4
+[2026-08-22 10:59:27] INFO     src.video_extractor — Extracting clip: 00:03:31.500 -> 00:03:59.599 (28.10s)
+[2026-08-22 10:59:27] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 201.500 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\0e3GPea1Tyg.mp4 -ss 10.000 -t 28.100 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:59:30] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 10:59:30] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 23.98fps | 674 frames
+[2026-08-22 10:59:41] INFO     src.face_tracker — Face tracking complete: 674/674 frames with primary face (100.0%)
+[2026-08-22 10:59:41] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (674 frames)
+[2026-08-22 10:59:41] INFO     src.reframer — Crop plan ready: 674 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 10:59:41] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 23.98fps (674 frames)…
+[2026-08-22 11:00:09] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 11:00:09] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 11:00:13] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 11:00:13] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 23.98fps (674 frames, 12 chunks)
+[2026-08-22 11:01:23] INFO     src.caption_renderer — Captioned 481/674 frames with animated word highlighting
+[2026-08-22 11:01:23] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 11:01:30] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_047.mp4
+[2026-08-22 11:01:30] INFO     server — [Pipeline]   ✓ Short #47 rendered → short_047.mp4
+[2026-08-22 11:01:30] INFO     server — [Pipeline] 🎉 Pipeline finished! 47 new shorts ready in gallery.
+[2026-08-22 11:27:31] INFO     server — [Pipeline] 🎬 [1/5] Downloading fresh video from: https://youtu.be/Xj0Jtjg3lHQ
+[2026-08-22 11:27:31] INFO     src.downloader — [VideoSailor] Initiating download request for: https://youtu.be/Xj0Jtjg3lHQ
+[2026-08-22 11:27:36] INFO     src.downloader — [VideoSailor] Received tunnel URL. Streaming video to Xj0Jtjg3lHQ.mp4...
+[2026-08-22 11:31:55] INFO     src.downloader — [VideoSailor] Download finished → Xj0Jtjg3lHQ.mp4 (156.84 MB)
+[2026-08-22 11:31:55] INFO     server — [Pipeline] ✓ Video downloaded: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:31:55] INFO     server — [Pipeline] 🎙️ [2/5] Transcribing audio with AssemblyAI Cloud API...
+[2026-08-22 11:32:00] INFO     app.transcriber — 🚀 Starting AssemblyAI Cloud transcription for 'Xj0Jtjg3lHQ.mp4'...
+[2026-08-22 11:32:00] INFO     app.transcriber — Transcribing audio via AssemblyAI Cloud API (extracted_audio.mp3)...
+[2026-08-22 11:32:55] INFO     src.inspector — Inspecting: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:32:56] INFO     app.transcriber — ✓ Transcription complete: 219 segments, 17.6 min speech (media duration 17.6 min).
+[2026-08-22 11:32:56] INFO     app.transcriber — Saved transcript JSON -> transcript.json
+[2026-08-22 11:32:56] INFO     app.transcriber — Saved transcript TXT -> transcript.txt
+[2026-08-22 11:32:56] INFO     server — [Pipeline] ✓ Transcription complete: 219 segments (en)
+[2026-08-22 11:32:56] INFO     server — [Pipeline] ⚡ [3/5] Extracting all key viral highlight moments across full video...
+[2026-08-22 11:32:56] INFO     app.clip_selector — Processing transcript with 219 segments (total duration 1054.7s)
+[2026-08-22 11:32:56] INFO     app.clip_selector — Short avg segment duration (4.8s) detected — using relaxed word-count validation (min_words=8)
+[2026-08-22 11:32:56] INFO     app.clip_selector — Identified 144 clean sentence start anchors out of 219 segments
+[2026-08-22 11:32:56] INFO     app.clip_selector — Generated 452 raw candidate windows
+[2026-08-22 11:32:56] INFO     app.clip_selector — Validation: 452 valid, 0 rejected
+[2026-08-22 11:32:56] INFO     app.clip_selector — Deduplication: reduced to 35 candidates in full candidate pool
+[2026-08-22 11:32:56] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (35 clips)
+[2026-08-22 11:32:56] INFO     app.clip_selector — Saved complete candidate pool -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (35 clips)
+[2026-08-22 11:32:56] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.json (35 clips)
+[2026-08-22 11:32:56] INFO     app.clip_selector — Candidates TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.txt
+[2026-08-22 11:32:56] INFO     server — [Pipeline] ✓ Selected 35 highlight clips from entire video
+[2026-08-22 11:32:56] INFO     server — [Pipeline] 🧠 [4/5] Evaluating candidates with semantic AI ranking...
+[2026-08-22 11:32:56] INFO     app.semantic_ranker — Loaded candidate pool of 35 candidates from candidate_pool.json
+[2026-08-22 11:32:57] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 11:32:59] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 11:33:00] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 11:33:02] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 57.833376281s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "57s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:03] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 56.456413129s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "56s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:04] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 55.761370913s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "55s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:05] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 54.447282223s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "54s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:07] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 52.633910217s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "52s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:08] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 51.237191148s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "51s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:10] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 49.985005153s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "49s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:10] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 49.267828897s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "49s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:12] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 47.934202435s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "model": "gemini-3.6-flash",
+              "location": "global"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "47s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:13] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 46.044528215s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "46s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:15] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 44.189354777s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "44s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:17] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 42.909160691s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "42s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 16 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 17 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 18 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 19 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 20 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 21 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 22 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 23 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 24 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 25 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 26 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 27 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 28 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 29 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 30 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 31 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 32 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 33 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 34 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — LLM time limit (20.0s) reached — evaluating candidate 35 via fast heuristic ranking
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — Evaluated 35 candidates in 20.7s (0.59s/clip)
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — Saved semantic JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.json (20 clips)
+[2026-08-22 11:33:17] INFO     app.semantic_ranker — Saved semantic TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\semantic_candidates.txt
+[2026-08-22 11:33:17] INFO     server — [Pipeline] ✓ AI Semantic ranking complete: 20 top shorts ranked
+[2026-08-22 11:33:17] INFO     server — [Pipeline] 🎥 [5/5] Reframing 9:16 AI Face Tracking & burning captions for all 20 shorts across full video...
+[2026-08-22 11:33:17] INFO     server — [Pipeline]   Rendering Short #1/20: Jeez, man. Check out the view. Is that not am...
+[2026-08-22 11:33:17] INFO     src.video_extractor — Source video: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:33:17] INFO     src.video_extractor — Extracting clip: 00:13:32.120 -> 00:14:01.950 (29.83s)
+[2026-08-22 11:33:17] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 802.120 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\Xj0Jtjg3lHQ.mp4 -ss 10.000 -t 29.830 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:33:20] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:33:20] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 29.97fps | 894 frames
+[2026-08-22 11:33:34] INFO     src.face_tracker — Face tracking complete: 800/894 frames with primary face (89.5%)
+[2026-08-22 11:33:34] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (894 frames)
+[2026-08-22 11:33:34] INFO     src.reframer — Crop plan ready: 894 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 11:33:34] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 29.97fps (894 frames)…
+[2026-08-22 11:33:51] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 11:33:51] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 11:33:57] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 11:33:57] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 29.97fps (894 frames, 24 chunks)
+[2026-08-22 11:34:42] INFO     src.caption_renderer — Captioned 750/894 frames with animated word highlighting
+[2026-08-22 11:34:42] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 11:34:50] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_001.mp4
+[2026-08-22 11:34:51] INFO     server — [Pipeline]   ✓ Short #1 rendered → short_001.mp4
+[2026-08-22 11:34:51] INFO     server — [Pipeline]   Rendering Short #2/20: You scared? Yeah, we're still pretty high up....
+[2026-08-22 11:34:51] INFO     src.video_extractor — Source video: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:34:51] INFO     src.video_extractor — Extracting clip: 00:15:06.721 -> 00:15:23.850 (17.13s)
+[2026-08-22 11:34:51] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 896.722 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\Xj0Jtjg3lHQ.mp4 -ss 10.000 -t 17.128 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:34:52] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:34:52] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 29.97fps | 513 frames
+[2026-08-22 11:35:00] INFO     src.face_tracker — Face tracking complete: 513/513 frames with primary face (100.0%)
+[2026-08-22 11:35:00] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (513 frames)
+[2026-08-22 11:35:00] INFO     src.reframer — Crop plan ready: 513 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 11:35:00] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 29.97fps (513 frames)…
+[2026-08-22 11:35:08] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 11:35:08] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 11:35:11] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 11:35:11] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 29.97fps (513 frames, 19 chunks)
+[2026-08-22 11:35:37] INFO     src.caption_renderer — Captioned 509/513 frames with animated word highlighting
+[2026-08-22 11:35:37] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 11:35:43] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_002.mp4
+[2026-08-22 11:35:43] INFO     server — [Pipeline]   ✓ Short #2 rendered → short_002.mp4
+[2026-08-22 11:35:43] INFO     server — [Pipeline]   Rendering Short #3/20: The $250,000 experience starts now. Oh my God...
+[2026-08-22 11:35:43] INFO     src.video_extractor — Source video: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:35:43] INFO     src.video_extractor — Extracting clip: 00:04:47.197 -> 00:05:12.141 (24.94s)
+[2026-08-22 11:35:43] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 277.197 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\Xj0Jtjg3lHQ.mp4 -ss 10.000 -t 24.944 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:35:46] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:35:46] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 29.97fps | 747 frames
+[2026-08-22 11:35:57] INFO     src.face_tracker — Face tracking complete: 747/747 frames with primary face (100.0%)
+[2026-08-22 11:35:57] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (747 frames)
+[2026-08-22 11:35:57] INFO     src.reframer — Crop plan ready: 747 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 11:35:57] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 29.97fps (747 frames)…
+[2026-08-22 11:36:13] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 11:36:13] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 11:36:17] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 11:36:17] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 29.97fps (747 frames, 13 chunks)
+[2026-08-22 11:36:50] INFO     src.caption_renderer — Captioned 682/747 frames with animated word highlighting
+[2026-08-22 11:36:50] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 11:36:58] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\short_003.mp4
+[2026-08-22 11:36:58] INFO     server — [Pipeline]   ✓ Short #3 rendered → short_003.mp4
+[2026-08-22 11:36:58] INFO     server — [Pipeline]   Rendering Short #4/20: Oh my God. You guys ready to explore the floo...
+[2026-08-22 11:36:58] INFO     src.video_extractor — Source video: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:36:58] INFO     src.video_extractor — Extracting clip: 00:02:20.280 -> 00:02:37.719 (17.44s)
+[2026-08-22 11:36:58] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 130.280 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\Xj0Jtjg3lHQ.mp4 -ss 10.000 -t 17.440 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:37:00] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:37:00] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 29.97fps | 522 frames
+[2026-08-22 11:37:08] INFO     src.face_tracker — Face tracking complete: 477/522 frames with primary face (91.4%)
+[2026-08-22 11:37:08] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (522 frames)
+[2026-08-22 11:37:08] INFO     src.reframer — Crop plan ready: 522 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 11:37:08] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 29.97fps (522 frames)…
+[2026-08-22 11:37:18] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 11:37:18] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 11:37:21] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 11:37:21] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 29.97fps (522 frames, 15 chunks)
+[2026-08-22 11:50:01] INFO     app.transcriber — Loaded latest video: Xj0Jtjg3lHQ.mp4 (164.5 MB)
+[2026-08-22 11:50:01] INFO     src.inspector — Inspecting: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:50:16] INFO     app.clip_selector — Processing transcript with 219 segments (total duration 1054.7s)
+[2026-08-22 11:50:16] INFO     app.clip_selector — Short avg segment duration (4.8s) detected — using relaxed word-count validation (min_words=8)
+[2026-08-22 11:50:16] INFO     app.clip_selector — Identified 144 clean sentence start anchors out of 219 segments
+[2026-08-22 11:50:16] INFO     app.clip_selector — Generated 149 raw candidate windows
+[2026-08-22 11:50:16] INFO     app.clip_selector — Validation: 149 valid, 0 rejected
+[2026-08-22 11:50:16] INFO     app.clip_selector — Deduplication: reduced to 33 candidates in full candidate pool
+[2026-08-22 11:50:16] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (33 clips)
+[2026-08-22 11:50:16] INFO     app.clip_selector — Saved complete candidate pool -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidate_pool.json (33 clips)
+[2026-08-22 11:50:16] INFO     app.clip_selector — Candidates JSON -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.json (30 clips)
+[2026-08-22 11:50:16] INFO     app.clip_selector — Candidates TXT -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\candidates.txt
+[2026-08-22 11:50:29] INFO     app.semantic_ranker — Loaded candidate pool of 33 candidates from candidate_pool.json
+[2026-08-22 11:50:30] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 11:50:32] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 11:50:33] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 403: {
+  "error": {
+    "code": 403,
+    "message": "Your API key was reported as leaked. Please use another API key.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+
+[2026-08-22 11:50:34] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 25.708210683s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "25s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:50:35] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 24.42313479s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "24s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:50:36] WARNING  app.semantic_ranker — LLM call failed (gemini provider): Gemini API error 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 5, model: gemini-3.6-flash\nPlease retry in 23.192468494s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-3.6-flash"
+            },
+            "quotaValue": "5"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "23s"
+      }
+    ]
+  }
+}
+
+[2026-08-22 11:50:49] INFO     src.video_extractor — Source video: Xj0Jtjg3lHQ.mp4
+[2026-08-22 11:50:49] INFO     src.video_extractor — Extracting clip: 00:13:32.120 -> 00:14:01.950 (29.83s)
+[2026-08-22 11:50:49] DEBUG    src.video_extractor — FFmpeg: ffmpeg -y -ss 802.120 -i C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\input\Xj0Jtjg3lHQ.mp4 -ss 10.000 -t 29.830 -c:v libx264 -crf 18 -preset ultrafast -c:a aac -b:a 192k -avoid_negative_ts make_zero C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:50:52] INFO     src.video_extractor — Saved extracted clip -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\source_clip.mp4
+[2026-08-22 11:50:52] INFO     src.face_tracker — YuNet face tracking in source_clip.mp4 | 1280x720 @ 29.97fps | 894 frames
+[2026-08-22 11:51:06] INFO     src.face_tracker — Face tracking complete: 800/894 frames with primary face (89.5%)
+[2026-08-22 11:51:07] INFO     src.face_tracker — Saved face tracks -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\face_tracks.json (894 frames)
+[2026-08-22 11:51:07] INFO     src.reframer — Crop plan ready: 894 frames, crop=405x720 -> output 1080x1920
+[2026-08-22 11:51:07] INFO     src.reframer — Reframing 1280x720 -> 1080x1920 @ 29.97fps (894 frames)…
+[2026-08-22 11:51:24] INFO     src.reframer — Raw reframed frames written -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\_reframed_noaudio.mp4
+[2026-08-22 11:51:24] INFO     src.reframer — Encoding reframed video with FFmpeg…
+[2026-08-22 11:51:28] INFO     src.reframer — Reframed video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\temp\phase4\reframed.mp4
+[2026-08-22 11:51:28] INFO     src.caption_renderer — Burning Phase 5 captions onto 1080x1920 video @ 29.97fps (894 frames, 24 chunks)
+[2026-08-22 11:52:16] INFO     src.caption_renderer — Captioned 750/894 frames with animated word highlighting
+[2026-08-22 11:52:16] INFO     src.caption_renderer — Encoding final captioned video with FFmpeg (Auto-Filter & Pitch-Shift applied)…
+[2026-08-22 11:52:26] INFO     src.caption_renderer — Final Phase 5 video saved -> C:\Users\nihal\OneDrive\Desktop\podcast-shorts-generator\output\test_short_001.mp4

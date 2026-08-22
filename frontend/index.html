@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PodcastShorts AI — 1-Click Viral Shorts Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body class="app-body">
+
+  <!-- ─── Top Navbar ────────────────────────────────────────────────── -->
+  <nav class="app-nav">
+    <div class="app-nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-icon">🎙️</span>
+        <span class="logo-text">PodcastShorts<span class="logo-accent">AI</span></span>
+      </a>
+      <div class="app-nav-right">
+        <div class="status-dot-wrap" onclick="promptBackendUrl()" style="cursor:pointer;" title="Click to change backend URL">
+          <span class="status-dot green" id="serverDot"></span>
+          <span class="status-lbl" id="serverLbl">Backend Connected</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ─── Main Content Container ────────────────────────────────────── -->
+  <main class="single-page-container">
+
+    <!-- ── 1. Hero Link Paste Generator Card ── -->
+    <section class="hero-generator-card">
+      <div class="hero-header">
+        <div class="hero-badge">⚡ 1-Click AI Video Repurposing</div>
+        <h1 class="hero-title">Turn Any Video into <span class="gradient-text">Viral 9:16 Shorts</span></h1>
+        <p class="hero-subtitle">
+          Paste your YouTube link below. AI automatically detects high-energy highlights, applies face-tracked 9:16 reframing, auto-enhances cinematic colors, elevates voice pitch, and burns karaoke captions with emojis.
+        </p>
+      </div>
+
+      <!-- YouTube URL Input Form -->
+      <div class="url-input-container">
+        <div class="url-input-wrap">
+          <svg class="url-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+          </svg>
+          <input 
+            id="ytUrl" 
+            type="url" 
+            placeholder="Paste YouTube Link (e.g. https://youtu.be/... or https://www.youtube.com/watch?v=...)" 
+            class="url-input" 
+            autocomplete="off"
+          />
+          <button class="btn-primary btn-generate" id="autoGenerateBtn" onclick="startAutoGenerate()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Generate Shorts
+          </button>
+        </div>
+      </div>
+
+      <!-- Feature Badges -->
+      <div class="features-pills-row">
+        <span class="feat-pill">✨ Auto Color Filter Grade</span>
+        <span class="feat-pill">🎵 Voice Pitch & Clarity Boost</span>
+        <span class="feat-pill">🎯 9:16 AI Face Tracking</span>
+        <span class="feat-pill">💬 Karaoke Animated Captions</span>
+        <span class="feat-pill">🔥 Full Video Coverage</span>
+      </div>
+    </section>
+
+    <!-- ── 2. Live AI Generation Progress Card ── -->
+    <section class="pipeline-card" id="pipelineMonitorCard" style="display:none;">
+      <div class="card-header">
+        <div class="status-indicator-spinner" id="monitorSpinner"></div>
+        <div>
+          <h2 class="card-title" id="monitorTitle">Generating Your Viral Shorts...</h2>
+          <p class="card-desc" id="monitorSubtitle">AI is extracting highlights, tracking faces, auto-grading color & voice pitch, and burning captions.</p>
+        </div>
+      </div>
+
+      <!-- Progress bar -->
+      <div class="progress-track" style="margin: 0.75rem 0;">
+        <div class="progress-bar" id="monitorProgressBar" style="width: 5%;"></div>
+      </div>
+      <div class="progress-meta-row">
+        <span id="monitorPhaseText">Phase 1/5: Downloading video...</span>
+        <span id="monitorPercentText">5%</span>
+      </div>
+
+      <!-- Live Log Box -->
+      <div class="phase-log visible" id="monitorLiveLog">
+        > Initializing AI Pipeline...
+      </div>
+    </section>
+
+    <!-- ── 3. Generated Shorts Gallery ── -->
+    <section class="gallery-section" id="gallerySection">
+      <div class="section-header-row">
+        <div>
+          <h2 class="section-title">🎬 Generated Shorts Gallery</h2>
+          <p class="section-sub">All rendered 9:16 shorts are ready to preview, stream, and download.</p>
+        </div>
+        <div style="display:flex; gap:0.5rem;">
+          <button class="btn-outline btn-sm" onclick="refreshOutputs();">
+            ↻ Refresh
+          </button>
+          <button class="btn-outline btn-sm" style="border-color:rgba(239,68,68,0.4); color:#f87171;" onclick="clearAllOutputs();">
+            🗑️ Clear All
+          </button>
+        </div>
+      </div>
+
+      <div class="clips-grid" id="clipsGrid">
+        <!-- Rendered clips populated dynamically by JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Video Preview Modal ────────────────────────────────────────── -->
+  <div class="video-modal-backdrop" id="videoModal" style="display:none;" onclick="closeVideoModal(event)">
+    <div class="video-modal-content" onclick="event.stopPropagation()">
+      <div class="video-modal-header">
+        <h3 id="modalVideoTitle" class="modal-title">Short Preview</h3>
+        <button class="modal-close-btn" onclick="closeVideoModal()">✕</button>
+      </div>
+      <div class="video-modal-body">
+        <video id="modalVideoPlayer" class="modal-video" controls autoplay playsinline></video>
+      </div>
+      <div class="video-modal-footer">
+        <a id="modalDownloadBtn" class="btn-primary btn-sm" href="#" download>
+          ⬇️ Download Short
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── Toast Notifications ────────────────────────────────────────── -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# ── Core / Config ──────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Phase 1: Download & Inspect ───────────────────────────────────────────────
+colorama>=0.4.6
+tqdm>=4.66.0
+
+# ── Phase 2: Cloud Transcription (AssemblyAI) ──────────────────────────────────
+assemblyai>=0.20.0
+requests>=2.28.0
+
+# ── Phase 4: Video Processing, Face Tracking & Reframing ─────────────────────
+opencv-python>=4.9.0
+Pillow>=10.0.0
+numpy>=1.26.0
+
+# Optional: GPU acceleration — install separately if you have an NVIDIA GPU.
+# pip install torch --index-url https://download.pytorch.org/whl/cu121
+# (or cu118 / cu124 depending on your CUDA toolkit version)
+# torch>=2.0.0
